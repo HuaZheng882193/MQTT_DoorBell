@@ -8,10 +8,7 @@ const getApiKey = () => {
     // @ts-ignore
     return import.meta.env.VITE_API_KEY;
   }
-  // Check for standard process.env (if available in current runner)
-  if (typeof process !== 'undefined' && process.env && process.env.API_KEY) {
-    return process.env.API_KEY;
-  }
+
   return '';
 };
 
